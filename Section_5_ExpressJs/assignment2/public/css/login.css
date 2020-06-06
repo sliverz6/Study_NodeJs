@@ -1,0 +1,41 @@
+.login-form {
+    margin: 0 auto;
+    width: 20rem;
+}
+
+.form-control {
+    margin: 1rem 0;
+    max-width: 90%;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #8132af;
+    border-radius: 10px;
+}
+
+.form-control label {
+    display: grid;
+    margin-bottom: 0.5rem;
+    color: #8132af;
+    font-weight: bold;
+}
+
+.form-button {
+    display: block;
+    margin: auto;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #8132af;
+    background: #8132af;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-button:hover,
+.form-button:active {
+    color: #8132af;
+    background: #fff;
+}
