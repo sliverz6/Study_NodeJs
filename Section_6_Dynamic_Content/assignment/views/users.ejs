@@ -1,0 +1,15 @@
+<%- include('includes/head.ejs') %>
+<body>
+    <main>
+        <h1>User List</h1>
+        <ul>
+            <% if (userList.length > 0) { %>
+                <% for (let user of userList) { %>
+                    <li><%= user.userName %></li>
+                <% } %>
+            <% } else {  %>
+                <p>No users...</p>
+            <% } %>
+        </ul>
+    </main>
+<%- include('includes/end.ejs') %>
