@@ -1,0 +1,28 @@
+.main-header {
+    height: 4rem;
+    background: rgb(77, 107, 206);
+}
+
+.main-header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header__list {
+    display: flex;
+}
+
+.main-header__item {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.main-header__item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-header__item a.active {
+    color: yellow;
+}
