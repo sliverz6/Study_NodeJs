@@ -1,0 +1,33 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/products.css">
+</head>
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <section class="product">
+            <div class="product__header">
+                <h2 class="product__title"><%= product.title %></h2>
+                <h3 class="product__price">$<%= product.price %></h3>
+            </div>
+            <hr>
+            <p class="product__desc"><%= product.description %></p>
+            <%- include('../includes/add-cart.ejs', product) %>
+        </section>
+        <section class="others">
+            <h3 class="others-title">More Products</h3>
+            <% if (prods.length > 0) { %>
+                <ul class="others__list">
+                    <% for (const prod of prods) { %>
+                        <li class="others__item">
+                            <a href="/products/<%= prod.id %>" class="other-item__detail">
+                                <h2 class="other-item__title"><%= prod.title %></h2>
+                                <h3 class="other-item__price">$ <%= prod.price %></h3>
+                            </a>
+                        </li>
+                    <% } %>
+                </ul>
+            <% } %>
+        </section>
+    </main>
+<%- include('../includes/end.ejs') %>

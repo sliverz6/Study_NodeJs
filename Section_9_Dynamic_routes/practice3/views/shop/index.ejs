@@ -1,0 +1,26 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/slide.css">
+<script src="/script/slide.js" defer></script>
+</head>
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <h1 class="main-title">Weekly Best</h1>
+        <section class="slide">
+            <ul class="slide__list">
+                <% for (const product of products) { %>
+                    <li class="slide__item">
+                        <a href="/products/<%= product.id %>">
+                            <h2 class="item__title"><%= product.title %></h2>
+                            <h3 class="item__price">$<%= product.price %></h3>
+                            <p class="item__desc"><%= product.description %></p>
+                        </a>
+                    </li>
+                <% } %>
+            </ul>
+            <button class="slide__btn btn-left"><</button>
+            <button class="slide__btn btn-right">></button>
+        </section>
+    </main>
+<%- include('../includes/end.ejs') %>

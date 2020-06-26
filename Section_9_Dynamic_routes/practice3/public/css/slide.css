@@ -1,0 +1,97 @@
+.slide {
+    position: relative;
+    padding: 0;
+    width: 60rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+.slide__list {
+    height: 100%;
+}
+
+.slide__item {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 8rem;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.slide__item.visible {
+    display: block;
+    animation: fadein 0.3s ease-in ;
+}
+
+.slide__item a {
+    border-radius: 10px;
+    border: 1px solid #5dcfd3;
+    color: #333;
+    display: block;
+    height: 100%;
+    transition: background 0.2s;
+}
+
+.slide__item a:hover {
+    background: #d0f5f6;
+}
+
+.item__title {
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.item__price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.item__desc {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.slide__btn {
+    position: absolute;
+    bottom: 10%;
+    font-size: 4rem;
+    color: #5dcfd3;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.slide__btn:hover,
+.slide__btn:active{
+    color: #a53de0;
+}
+
+.slide__btn:focus {
+    outline: none;;
+}
+
+.btn-left {
+    left: 45%;
+}
+
+.btn-right {
+    right: 45%;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

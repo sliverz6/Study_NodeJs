@@ -1,0 +1,23 @@
+.form-control {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
